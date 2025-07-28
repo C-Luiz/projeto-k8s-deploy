@@ -1,13 +1,8 @@
 Projeto de Deploy de Aplicação Fullstack em Kubernetes
 Este projeto demonstra o deploy de uma aplicação fullstack (React, Flask, PostgreSQL) em um cluster Kubernetes, garantindo alta disponibilidade, gerenciamento de configuração e persistência de dados.
 
-👥 Integrantes da Equipe
-[Seu Nome 1] - [Link para seu GitHub/LinkedIn (opcional)]
 
-[Seu Nome 2] - [Link para seu GitHub/LinkedIn (opcional)]
-
-[Seu Nome 3] - [Link para seu GitHub/LinkedIn (opcional)]
-(Adicione todos os membros da sua equipe aqui)
+Grupo: Júlio Cézar Netto de Araújo, Jardson Lúcio Peres da Silva e Clebson Luiz da Silva
 
 🎯 Objetivo do Projeto
 O objetivo principal desta atividade é praticar o uso dos principais componentes do Kubernetes para realizar o deploy completo de uma aplicação que consiste em:
@@ -95,8 +90,8 @@ Navegue até o diretório backend:
 Bash
 
 cd backend
-docker build -t Cluiz/backend-mensagens:latest .
-docker push Cluiz/backend-mensagens:latest
+docker build -t cluiz/backend-mensagens:latest .
+docker push cluiz/backend-mensagens:latest
 cd .. # Voltar para o diretório raiz do projeto
 Para o Frontend:
 Navegue até o diretório frontend:
@@ -104,10 +99,10 @@ Navegue até o diretório frontend:
 Bash
 
 cd frontend
-docker build -t Cluiz/frontend-mensagens:latest .
-docker push Cluiz/frontend-mensagens:latest
+docker build -t cluiz/frontend-mensagens:latest .
+docker push cluiz/frontend-mensagens:latest
 cd .. # Voltar para o diretório raiz do projeto
-Atenção: Certifique-se de substituir Cluiz pelo seu próprio nome de usuário do Docker Hub.
+Atenção: Certifique-se de substituir cluiz pelo seu próprio nome de usuário do Docker Hub.
 
 2. Aplicar os Arquivos de Configuração no Kubernetes
 Execute os comandos kubectl apply na ordem correta para garantir que as dependências sejam satisfeitas. Certifique-se de estar no diretório raiz do projeto (projeto-k8s-deploy).
